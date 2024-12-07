@@ -13,9 +13,16 @@
     ansible dev -a "ls -a"
     ```
   - Install Apache HTTP Server (httpd) on remote hosts
+  - Locate the installation path of the httpd binary on remote hosts
     ```
     ansible dev -a "sudo yum install httpd -y"
-    ansible dev -a "which httpd"
+    ansible dev -a "sudo which httpd"
+    ansible dev -a "sudo systemctl status httpd"
+    ansible dev -a "sudo systemctl start httpd"
+    ansible dev -a "sudo systemctl stop httpd"
+    ansible dev -a "sudo yum remove httpd -y"
+    ```
+    
     
 ## To Copy the FILE
 
