@@ -16,7 +16,7 @@ ansible dev -a "pwd"
                                     
                                     
                                     
-              /home/username
+        output :      /home/username
 
 ansible dev -a "ls"
 
