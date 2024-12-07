@@ -1,5 +1,5 @@
 # ansible-commands 
-  - use the commands
+- use the commands
   - present working directory
     ```
     ansible dev -a "pwd"
