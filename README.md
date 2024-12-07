@@ -3,7 +3,7 @@
 - use the commands
   - present working directory
     ```
-    pwd
+    ## pwd ansible dev -a "pwd"   
     ```
   - list
     ```
