@@ -3,7 +3,7 @@
   - present working directory
     ```
     ansible dev -a "pwd"
-    ```
+    ``` 
   - list
     ```
     ansible dev -a "ls"
