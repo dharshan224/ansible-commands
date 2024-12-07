@@ -14,6 +14,10 @@
     ```
   - Install Apache HTTP Server (httpd) on remote hosts
   - Locate the installation path of the httpd binary on remote hosts
+  - Check the status of Apache HTTP Server (httpd)
+  - Start the Apache HTTP Server (httpd)
+  - Stop the Apache HTTP Server (httpd)
+  - Remove Apache HTTP Server (httpd)
     ```
     ansible dev -a "sudo yum install httpd -y"
     ansible dev -a "sudo which httpd"
