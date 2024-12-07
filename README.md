@@ -3,12 +3,12 @@
 - use the commands
   - present working directory
     ```
-    #pwd ansible dev -a "pwd"
+    ansible dev -a "pwd"
          /home/username
     ```
   - list
     ```
-    #ls ansible dev -a "ls"
+    ansible dev -a "ls"
     ```
   - list -a
     ```sh
