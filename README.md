@@ -3,8 +3,8 @@ AD_HOC
 
     ansible dev -a "pwd"                                                   
     /home/username
-          
+    ansible dev -a "ls"
 
-ansible dev -a "ls"
+
 
 
