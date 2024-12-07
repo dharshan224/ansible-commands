@@ -5,11 +5,11 @@
     ```
     pwd
     ```
-  - 5454545
+  - list
     ```
     pwd    ##present working directory
     ```
-  - 1233
+  - list -a
     ```sh
     ansible dev -a "pwd"                                                   
     /home/username
@@ -17,7 +17,5 @@
     ```
 ## To move the file
 - 
-|-----------|-----------|
-|ghfgcfc|fgfgfgd|
 
 
