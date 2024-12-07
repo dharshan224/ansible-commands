@@ -12,6 +12,11 @@
     ```
     ansible dev -a "ls -a"
     ```
+  - Install Apache HTTP Server (httpd) on remote hosts
+    ```
+    ansible dev -a "sudo yum install httpd -y"
+    ansible dev -a "which httpd"
+    
     ## To Copy the FILE
 ## To move the file
 - 
