@@ -1,5 +1,7 @@
 
 
 
-                              ansible dev -a "pwd"                                                   
+
+                                                      
+                                                                               ansible dev -a "pwd"                                                   
                                 /home/username
