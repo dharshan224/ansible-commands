@@ -14,21 +14,17 @@
     ```
   - Install Apache HTTP Server (httpd) on remote hosts
   - Locate the installation path of the httpd binary on remote hosts
-  - Check the status of Apache HTTP Server (httpd)
-  - Start the Apache HTTP Server (httpd)
-  - Stop the Apache HTTP Server (httpd)
-  - Remove Apache HTTP Server (httpd)
+  - Checks the status of the httpd (Apache) service with elevated privileges 
+  - Starts the httpd (Apache) service on remote hosts with elevated privileges.
+  - Stops the httpd (Apache) service on remote hosts with elevated privileges
+  - Removes the httpd package (Apache HTTP Server) from remote hosts with elevated privileges.
     ```
     ansible dev -a "sudo yum install httpd -y"
     ansible dev -a "sudo which httpd"
-    ansible dev -b -a "systemctl status httpd" ```##Checks the status of the httpd (Apache) service with elevated privileges (e.g., sudo).```
-    ansible dev -b -a "systemctl start httpd"  ```##Starts the httpd (Apache) service on remote hosts with elevated privileges.
-    ansible dev -b -a "systemctl stop httpd"   ```##Stops the httpd (Apache) service on remote hosts with elevated privileges.
-    ansible dev -b -a "yum remove httpd -y"    ```##Removes the httpd package (Apache HTTP Server) from remote hosts with elevated privileges.
-    ansible dev -a "sudo systemctl status httpd"
-    ansible dev -a "sudo systemctl start httpd"
-    ansible dev -a "sudo systemctl stop httpd"
-    ansible dev -a "sudo yum remove httpd -y"
+    ansible dev -b -a "systemctl status httpd" 
+    ansible dev -b -a "systemctl start httpd"  
+    ansible dev -b -a "systemctl stop httpd"
+    ansible dev -b -a "sudo yum remove httpd -y"
     ```
     
     
