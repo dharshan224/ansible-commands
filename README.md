@@ -21,12 +21,10 @@
     ```
     ansible dev -a "sudo yum install httpd -y"
     ansible dev -a "sudo which httpd"
-    ansible dev -b -a "systemctl status httpd"
-  ##Checks the status of the httpd (Apache) service with elevated privileges (e.g., sudo).
-           ansible dev -b -a "systemctl start httpd"
-  ##Starts the httpd (Apache) service on remote hosts with elevated privileges.
-    ansible dev -b -a "systemctl stop httpd" ##Stops the httpd (Apache) service on remote hosts with elevated privileges.
-    ansible dev -b -a "yum remove httpd -y"  ##Removes the httpd package (Apache HTTP Server) from remote hosts with elevated privileges.
+    ansible dev -b -a "systemctl status httpd" ```##Checks the status of the httpd (Apache) service with elevated privileges (e.g., sudo).```
+    ansible dev -b -a "systemctl start httpd"  ```##Starts the httpd (Apache) service on remote hosts with elevated privileges.
+    ansible dev -b -a "systemctl stop httpd"   ```##Stops the httpd (Apache) service on remote hosts with elevated privileges.
+    ansible dev -b -a "yum remove httpd -y"    ```##Removes the httpd package (Apache HTTP Server) from remote hosts with elevated privileges.
     ansible dev -a "sudo systemctl status httpd"
     ansible dev -a "sudo systemctl start httpd"
     ansible dev -a "sudo systemctl stop httpd"
