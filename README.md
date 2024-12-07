@@ -10,11 +10,11 @@
     pwd    ##present working directory
     ```
   - list -a
-    ```
+    ```sh
     ansible dev -a "pwd"                                                   
     /home/username
     ansible dev -a "ls"
-     ansible dev -a "ls -a"
+    ansible dev -a "ls -a"
     ```
 ## To move the file
 - 
