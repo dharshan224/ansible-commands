@@ -1,2 +1,4 @@
 # ansible-commands
-ansible dev -a "pwd"                         hchcn
+AD_HOC
+ansible dev -a "pwd"                       
+
