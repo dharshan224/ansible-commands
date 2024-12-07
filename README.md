@@ -1,15 +1,15 @@
 # ansible-commands 
 - use the commands
-  - present working directory
+  - Prints the current working directory on each host 
     ```
     ansible dev -a "pwd"
     ``` 
-  - list
+  - Lists the files in the current directory on each host
     ```
     ansible dev -a "ls"
     ```
-  - list -a
-    ```sh
+  - Lists all files (including hidden ones) in the current directory on each host
+    ```
     ansible dev -a "ls -a"
     ```
     ## To Copy the FILE
