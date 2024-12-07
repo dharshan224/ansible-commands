@@ -4,7 +4,6 @@
   - present working directory
     ```
     ansible dev -a "pwd"
-         /home/username
     ```
   - list
     ```
