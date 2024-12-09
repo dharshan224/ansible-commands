@@ -10,7 +10,7 @@
     ```
   - Lists all files (including hidden ones) in the current directory on each host
     ```
-    ansible dev -a "ls -a"
+    ansible dev -a "ls -a "
     ```
   - Install Apache HTTP Server (httpd) on remote hosts
   - Locate the installation path of the httpd binary on remote hosts
