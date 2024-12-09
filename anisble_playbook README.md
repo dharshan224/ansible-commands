@@ -1,3 +1,4 @@
+-to check worker node 
 ```
 ---
 - name: to check workernode
@@ -5,4 +6,5 @@
   user: ansible
   become: yes
   connection: ssh
+
 ```
