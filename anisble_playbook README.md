@@ -82,7 +82,6 @@
     - name: Display Jenkins service status
       debug:
         var: jenkins_status
-  
-  
-
 ```
+
+dmks
