@@ -99,16 +99,7 @@ ansible dev -b -m shell -a "git clone https://github.com/dharshan224/ansible-com
 ```
 ansible dev -b -m shell -a "cd ansible-commands && ls"
 ```
--to check worker node 
-```
----
-- name: to check workernode
-  hosts: dev
-  user: ansible
-  become: yes
-  connection: ssh
 
-```
 
 
 
