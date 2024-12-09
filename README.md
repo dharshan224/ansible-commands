@@ -57,47 +57,47 @@ ansible dev-b-m shell -a "rmdir shan".
 ```
 -Delete file in target host
 ```
-ansible dev-b-m shell -a "rm /home/ansible/dev.txt".
+ansible dev -b -m shell -a "rm /home/ansible/dev.txt".
 ```
 -Create file in target host with file permission
 ```
-ansible dev-b-m file -a "path=/home/ansible/shan mode=0777".
+ansible dev -b -m file -a "path=/home/ansible/shan mode=0777".
 ```
 -remove file in target host with file permission
 ```
-ansible dev-b-m shell -a "rm /home/ansible/sam.txt mode=0777".
+ansible dev -b -m shell -a "rm /home/ansible/sam.txt mode=0777".
 ```
 -Install git in target host 
 ```
-ansible dev-b-m command -a "yum install git -y".
+ansible dev -b -m command -a "yum install git -y".
 ```
 -Install docker in target host 
 ```
-ansible dev-b-m command -a "yum install docker -y".
+ansible dev -b -m command -a "yum install docker -y".
 ```
 -Start docker service 
 ```
-ansible dev-b-m command -a "systemctl start docker.service".
+ansible dev -b -m command -a "systemctl start docker.service".
 ```
 -Pull httpd image in target host 
 ```
-ansible dev-b-m shell -a "docker pull httpd".
+ansible dev -b -m shell -a "docker pull httpd".
 ```
 -Run httpd server container in target host 
 ```
-ansible dev-bm shell -a "docker run -it -d httpd".
+ansible dev -b -m shell -a "docker run -it -d httpd".
 ```
 -List running container in target host 
 ```
-ansible dev-bm shell -a "docker ps".
+ansible dev -b -m shell -a "docker ps".
 ```
 -Clone a Git repository 
 ```
-ansible dev-b-m shell -a "git clone https://github.com/dharshan224/ansible-commands.git".
+ansible dev -b -m shell -a "git clone https://github.com/dharshan224/ansible-commands.git".
 ```
 -List files in specific directory 
 ```
-ansible dev-b-m shell -a "cd ansible-commands && ls"
+ansible dev -b -m shell -a "cd ansible-commands && ls"
 ```
 
 
