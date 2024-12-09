@@ -1,4 +1,4 @@
--to check worker node 
+ -to check worker node 
 ```
 ---
 - name: to check workernode
