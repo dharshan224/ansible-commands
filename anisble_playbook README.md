@@ -10,6 +10,7 @@
 ```
 - Install java 17 & Maven & jenkins
   ```
+  ---
   - name: Install Java 17, Maven, and Jenkins on worker nodes
   hosts: dev
   user: ansible
@@ -82,10 +83,7 @@
     - name: Display Jenkins service status
       debug:
         var: jenkins_status
-```
-
-- dmks
+- install docker
   ```
-           :wq
-           rjnvrvnrrnkvrnkrnmkr 
- ```
+   fk d
+  
