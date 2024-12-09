@@ -1,7 +1,7 @@
 # ansible-commands 
-- use the commands
+###use the commands
   - Prints the current working directory on each host 
-    ```
+    ```bash
     ansible dev -a "pwd"
     ``` 
   - Lists the files in the current directory on each host
