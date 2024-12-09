@@ -1,4 +1,7 @@
+#ansible_playbook
+
 - use the commands
+
   - Prints the current working directory on each host 
     ```
        ansible dev -a "pwd"
