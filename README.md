@@ -1,4 +1,4 @@
-# ansible-commands 
+# ansible-commands  
 - use the commands
   - Prints the current working directory on each host 
     ```
