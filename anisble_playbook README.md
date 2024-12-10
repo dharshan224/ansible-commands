@@ -83,7 +83,48 @@
     - name: Display Jenkins service status
       debug:
         var: jenkins_status
-- install docker
+- install git and pull source code
   ```
-   fk d
+   fk d- name: First task
+  hosts: dev
+  user: ansible
+  become: yes
+  connection: ssh
+  vars:
+    pkgname: /home/ansible/play1.yml
+  tasks:
+    - name: Install git
+      yum:
+        name: git
+        state: present
+
+    - name: Create a directory for the git repository
+      file:
+        path: "{{ pkgname }}"
+        state: directory
+
+    - name: Initialize a git repository
+      git:
+        repo: https://github.com/dharshan224/Ansible.git
+        dest: "{{ pkgname }}"
+        bare: no
+        version: main
+
+    - name: Configure git user name
+      command: git config user.name "dharshan224"
+      args:
+        chdir: "{{ pkgname }}"
+
+    - name: Configure git user email
+      command: git config user.email "dharshan997@gmai.com"
+      args:
+        chdir: "{{ pkgname }}"
+
+    - name: Pull Latest Changes
+      git:
+        repo: https://github.com/dharshan224/Ansible.git
+        dest:  "{{ pkgname }}"
+        version: main
+        force: yes
+
   
