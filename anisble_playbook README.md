@@ -85,7 +85,7 @@
         var: jenkins_status
 - install git and pull source code
   ```
-   fk d- name: First task
+   - name: First task
   hosts: dev
   user: ansible
   become: yes
@@ -126,5 +126,12 @@
         dest:  "{{ pkgname }}"
         version: main
         force: yes
+  ```
+  - install docker
+    ```
+    ef
+
+
+
 
   
