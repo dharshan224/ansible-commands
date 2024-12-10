@@ -127,9 +127,26 @@
         version: main
         force: yes
   ```
-  - install docker
+  - install httpd with notify and handlers
     ```
-    ef
+    - name: forest
+      hosts: dev
+      user: ansible
+      become: yes
+      connection: ssh
+      tasks:
+       - name: install httpd
+         action: yum name=httpd state=present
+         notify: start the service
+      handlers:
+       - name: start the service
+         action: service name=httpd state=started
+    ```
+    - using looping playbook
+      ```
+      - name
+
+
 
 
 
